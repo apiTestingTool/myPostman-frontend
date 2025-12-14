@@ -1,0 +1,50 @@
+:root {
+  /* Base theme */
+  --main-bg: #202020;
+  --light-border: #505050;
+
+  /* HTTP Method colors */
+  --http-get: #22c55e;     /* green */
+  --http-post: #3b82f6;    /* blue */
+  --http-put: #eab308;     /* yellow */
+  --http-patch: #a855f7;   /* purple */
+  --http-delete: #ef4444;  /* red */
+}
+
+/* Base utilities */
+.main-bg {
+  background-color: var(--main-bg);
+}
+
+.light-border-bottom {
+  border-bottom: 2px solid var(--light-border);
+}
+
+/* HTTP method utilities */
+.text-http-get {
+  color: var(--http-get);
+}
+.text-http-post {
+  color: var(--http-post);
+}
+.text-http-put {
+  color: var(--http-put);
+}
+.text-http-patch {
+  color: var(--http-patch);
+}
+.text-http-delete {
+  color: var(--http-delete);
+}
+
+/* tailwind.css or global.css */
+@keyframes toast {
+  0% { opacity: 0; transform: translateY(4px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-4px); }
+}
+
+.animate-toast {
+  animation: toast 1s ease-in-out forwards;
+}
